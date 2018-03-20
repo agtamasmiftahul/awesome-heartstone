@@ -26,3 +26,19 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.rotateLeftImg {
+  position:relative;
+  right:20%;
+  -ms-transform: rotate(-20deg); /* IE 9 */
+  -webkit-transform: rotate(-20deg); /* Safari */
+  transform: rotate(-20deg); /* Standard syntax */
+}
+
+.rotateRightImg {
+  position:relative;
+  left:20%;
+  -ms-transform: rotate(20deg); /* IE 9 */
+  -webkit-transform: rotate(20deg); /* Safari */
+  transform: rotate(20deg); /* Standard syntax */
+}
