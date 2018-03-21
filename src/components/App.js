@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import getCardList from '../actions/get_card_list';
 import CardList from './CardList';
+import { Grid, Image } from 'semantic-ui-react'
 
 class App extends Component {
   componentDidMount() {
@@ -11,15 +12,12 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App container">
-        <div className="card-container">
-          <div className="columns">
-            <div className="column col-md-6">
-              <CardList />
-            </div>
-          </div>
-        </div>
-      </div>
+      <Grid centered columns={1}>
+        <Grid.Column>
+          <Image className='banner' src='images/banner-desktop.png' fluid/>
+        </Grid.Column>
+        <CardList />
+      </Grid>
     );
   }
 }

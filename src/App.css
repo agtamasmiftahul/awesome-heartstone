@@ -1,3 +1,7 @@
+body {
+  font-family: 'Roboto';
+  background:#fdcb6e !important
+}
 .App {
   text-align: center;
 }
@@ -29,16 +33,31 @@
 
 .rotateLeftImg {
   position:relative;
-  right:20%;
-  -ms-transform: rotate(-20deg); /* IE 9 */
-  -webkit-transform: rotate(-20deg); /* Safari */
-  transform: rotate(-20deg); /* Standard syntax */
+  right:25%;
+  -ms-transform: rotate(-10deg); /* IE 9 */
+  -webkit-transform: rotate(-10deg); /* Safari */
+  transform: rotate(-10deg); /* Standard syntax */
 }
 
 .rotateRightImg {
   position:relative;
-  left:20%;
-  -ms-transform: rotate(20deg); /* IE 9 */
-  -webkit-transform: rotate(20deg); /* Safari */
-  transform: rotate(20deg); /* Standard syntax */
+  left:25%;
+  -ms-transform: rotate(10deg); /* IE 9 */
+  -webkit-transform: rotate(10deg); /* Safari */
+  transform: rotate(10deg); /* Standard syntax */
+}
+
+.borderless {
+  background:#fdcb6e !important;
+}
+
+.title{
+  font-family: 'Berkshire Swash' !important;
+  font-size: 40px;
+  text-align: center;
+}
+
+.banner {
+  border-bottom-right-radius: 40%;
+  border-bottom-left-radius: 40%;
 }
