@@ -21,6 +21,9 @@ class App extends Component {
           <Image className='banner' src='images/banner-desktop.png' fluid/>
         </Grid.Column>
         <CardList />
+        <Grid.Column className='footer'>
+          <Image src='images/footer-desktop.png' />
+        </Grid.Column>
       </Grid>
     );
   }

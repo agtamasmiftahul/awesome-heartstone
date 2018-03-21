@@ -99,3 +99,8 @@ body {
 .dropdownsearchitem > span {
   color: #ffffff !important;
 }
+
+.footer {
+  padding: 0px !important;
+  margin: 0px !important;
+}
