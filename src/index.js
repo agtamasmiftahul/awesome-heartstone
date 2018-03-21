@@ -10,7 +10,7 @@ import './App.css'
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import App from './components/App'
-import Hero from './components/Card'
+import Hero from './components/Detail'
 
 const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
 const store = createStoreWithMiddleware(reducers);

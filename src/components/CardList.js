@@ -12,11 +12,15 @@ class CardList extends Component {
             <Card className='borderless' key={r.cardId} fluid centered>
               <Card.Content textAlign='center'>
                 <Image className='rotateRightImg' src='images/cardBack.gif' size='small' />
-                <Image className='rotateLeftImg' src={r.img} size='small' />
+                <Link to={r.cardId}>
+                  <Image className='rotateLeftImg' src={r.img} size='small' />
+                </Link>
               </Card.Content>
               <Card.Content extra textAlign='center'>
                 <Image src='images/logo-sm.png' size='mini' />
-                <Header size='medium'>{r.name}</Header>
+                <Link to={r.cardId}>
+                  <Header size='medium'>{r.name}</Header>
+                </Link>
               </Card.Content>
             </Card>
           </Grid.Column>

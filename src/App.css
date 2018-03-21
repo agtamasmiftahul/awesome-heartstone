@@ -47,6 +47,22 @@ body {
   transform: rotate(10deg); /* Standard syntax */
 }
 
+.rotateLeftImgDetail {
+  position:relative;
+  right:30%;
+  -ms-transform: rotate(-10deg); /* IE 9 */
+  -webkit-transform: rotate(-10deg); /* Safari */
+  transform: rotate(-10deg); /* Standard syntax */
+}
+
+.rotateRightImgDetail {
+  position:relative;
+  left:30%;
+  -ms-transform: rotate(10deg); /* IE 9 */
+  -webkit-transform: rotate(10deg); /* Safari */
+  transform: rotate(10deg); /* Standard syntax */
+}
+
 .borderless {
   background: #f8e7c5 !important;
 }
@@ -103,4 +119,8 @@ body {
 .footer {
   padding: 0px !important;
   margin: 0px !important;
+}
+
+.description {
+  font-size: 20px;
 }
