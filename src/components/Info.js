@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 import { Menu, Image, Dropdown, Input } from 'semantic-ui-react'
+import { Link } from 'react-router-dom'
 
 export default class InfoPanel extends Component {
   render(){
     return(
       <Menu className='infopanel' fluid compact>
         <Menu.Menu position='left'>
-          <Image src='images/logo-text-sm.png' size='small'/>
+          <Link to='/'>
+            <Image src='images/logo-text-sm.png' size='small'/>
+          </Link>
         </Menu.Menu>
         <Menu.Menu position='right'>
           <Menu.Item>
