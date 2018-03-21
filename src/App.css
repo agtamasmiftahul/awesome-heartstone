@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto';
-  background:#fdcb6e !important
+  background: #f8e7c5 !important
 }
 .App {
   text-align: center;
@@ -48,7 +48,7 @@ body {
 }
 
 .borderless {
-  background:#fdcb6e !important;
+  background: #f8e7c5 !important;
 }
 
 .title{
@@ -60,4 +60,42 @@ body {
 .banner {
   border-bottom-right-radius: 40%;
   border-bottom-left-radius: 40%;
+}
+
+.menubar {
+  background: #472210 !important;
+  border-radius: 0px !important;
+  height: 75px !important;
+}
+
+.menu-link {
+  color: #f8e7c5 !important;
+}
+
+.infopanel {
+  background: #32170b !important;
+  border-radius: 0px !important;
+  height: 75px !important;
+  padding-left: 20px;
+  padding-right:20px;
+}
+
+.searchbar {
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.dropdownsearch {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  background: #ff7300 !important;
+  color: #f8e7c5 !important;
+}
+
+.dropdownsearchmenu {
+  background: #5b5b5b !important;
+}
+
+.dropdownsearchitem > span {
+  color: #ffffff !important;
 }

@@ -3,6 +3,8 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import getCardList from '../actions/get_card_list';
 import CardList from './CardList';
+import MenuBar from './Menu'
+import InfoPanel from './Info'
 import { Grid, Image } from 'semantic-ui-react'
 
 class App extends Component {
@@ -14,6 +16,8 @@ class App extends Component {
     return (
       <Grid centered columns={1}>
         <Grid.Column>
+          <InfoPanel />
+          <MenuBar />
           <Image className='banner' src='images/banner-desktop.png' fluid/>
         </Grid.Column>
         <CardList />
