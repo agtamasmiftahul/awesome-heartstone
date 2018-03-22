@@ -5,7 +5,7 @@ hearthstone is a free-to-play online collectible card video game developed and p
 [Awesome Heartstone](http://heartstone.netlify.com)
 
 ## Run locally
-1. ```git clone git@github.com:agtamasmiftahul/awesome-heartstone.git```
+1. ```git clone https://github.com/agtamasmiftahul/awesome-heartstone.git```
 2. ```cd awesome-heartstone```
 3. ```npm install``` or ```yarn install```
 4. ```npm start``` or ```yarn start```
