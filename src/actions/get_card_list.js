@@ -1,5 +1,5 @@
-import { GET_CARD_LIST } from './types';
-import axios from 'axios';
+import { GET_CARD_LIST } from './types'
+import axios from 'axios'
 
 export default function getCardList() {
   return dispatch => {
@@ -10,11 +10,11 @@ export default function getCardList() {
         }
       })
         .then(response => {
-          console.log(response.data);
+          console.log(response.data)
           dispatch(getCardListAsync(response.data))
         })
         .catch(error => {
-          throw(error);
+          throw(error)
         });
   }
 }

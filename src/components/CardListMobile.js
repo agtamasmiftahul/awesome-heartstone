@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import { Grid, Card, Image, Header } from 'semantic-ui-react'
 
-class CardList extends Component {
+class CardListMobile extends Component {
   renderHeroes() {
     if(this.props.heroes) {
       return this.props.heroes.map(r => {
@@ -11,9 +11,9 @@ class CardList extends Component {
           <Grid.Column key={r.cardId}>
             <Card className='borderless' fluid centered>
               <Card.Content textAlign='center'>
-                <Image className='rotateRightImg' src='images/cardBack.gif' size='small' />
+                <Image className='rotateRightImgMobile' src='images/cardBack.gif' size='mini' />
                 <Link to={r.cardId}>
-                  <Image className='rotateLeftImg' src={r.img} size='small' />
+                  <Image className='rotateLeftImgMobile' src={r.img} size='mini' />
                 </Link>
               </Card.Content>
               <Card.Content extra textAlign='center'>
@@ -31,7 +31,7 @@ class CardList extends Component {
 
   render() {
     return (
-      <Grid centered columns={3} padded>
+      <Grid centered columns={2} padded>
         {this.renderHeroes()}
       </Grid>
     );
@@ -45,4 +45,4 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps, null)(CardList)
+export default connect(mapStateToProps, null)(CardListMobile)

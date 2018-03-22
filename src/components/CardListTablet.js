@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import { Grid, Card, Image, Header } from 'semantic-ui-react'
 
-class CardList extends Component {
+class CardListTablet extends Component {
   renderHeroes() {
     if(this.props.heroes) {
       return this.props.heroes.map(r => {
@@ -31,7 +31,7 @@ class CardList extends Component {
 
   render() {
     return (
-      <Grid centered columns={3} padded>
+      <Grid centered columns={2} padded>
         {this.renderHeroes()}
       </Grid>
     );
@@ -45,4 +45,4 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps, null)(CardList)
+export default connect(mapStateToProps, null)(CardListTablet)

@@ -1,4 +1,4 @@
-import { GET_CARD } from './types';
+import { GET_CARD } from './types'
 import axios from 'axios'
 
 export default function getCardListByName(name) {
@@ -10,11 +10,11 @@ export default function getCardListByName(name) {
         }
       })
         .then(response => {
-          console.log(response.data);
+          console.log(response.data)
           dispatch(getCardListByNameAsync(response.data))
         })
         .catch(error => {
-          throw(error);
+          throw(error)
         });
   }
 }

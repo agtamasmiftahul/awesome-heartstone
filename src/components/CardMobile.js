@@ -7,13 +7,13 @@ class CardDetail extends Component {
     if(this.props.hero) {
       return this.props.hero.map(r => {
         return (
-          <Grid.Column key={r.cardId}>
-            <Card className='borderless' fluid centered>
-              <Grid centered columns={2} padded>
+          <Grid.Column>
+            <Card className='borderless' key={r.cardId} fluid centered>
+              <Grid centered columns={1} padded>
                 <Grid.Column>
                   <Card.Content textAlign='center'>
-                    <Image className='rotateRightImgDetail' src='images/cardBack.gif' size='medium' />
-                      <Image className='rotateLeftImgDetail' src={r.img} size='medium' />
+                    <Image className='rotateRightImgDetailMobile' src='images/cardBack.gif' size='tiny' />
+                    <Image className='rotateLeftImgDetailMobile' src={r.img} size='tiny' />
                   </Card.Content>
                 </Grid.Column>
                 <Grid.Column>

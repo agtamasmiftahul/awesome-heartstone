@@ -41,7 +41,23 @@ body {
 
 .rotateRightImg {
   position:relative;
-  left:25%;
+  left:30%;
+  -ms-transform: rotate(10deg); /* IE 9 */
+  -webkit-transform: rotate(10deg); /* Safari */
+  transform: rotate(10deg); /* Standard syntax */
+}
+
+.rotateLeftImgMobile {
+  position:relative;
+  right:20%;
+  -ms-transform: rotate(-10deg); /* IE 9 */
+  -webkit-transform: rotate(-10deg); /* Safari */
+  transform: rotate(-10deg); /* Standard syntax */
+}
+
+.rotateRightImgMobile {
+  position:relative;
+  left:20%;
   -ms-transform: rotate(10deg); /* IE 9 */
   -webkit-transform: rotate(10deg); /* Safari */
   transform: rotate(10deg); /* Standard syntax */
@@ -58,6 +74,22 @@ body {
 .rotateRightImgDetail {
   position:relative;
   left:30%;
+  -ms-transform: rotate(10deg); /* IE 9 */
+  -webkit-transform: rotate(10deg); /* Safari */
+  transform: rotate(10deg); /* Standard syntax */
+}
+
+.rotateLeftImgDetailMobile {
+  position:relative;
+  right:20%;
+  -ms-transform: rotate(-10deg); /* IE 9 */
+  -webkit-transform: rotate(-10deg); /* Safari */
+  transform: rotate(-10deg); /* Standard syntax */
+}
+
+.rotateRightImgDetailMobile {
+  position:relative;
+  left:20%;
   -ms-transform: rotate(10deg); /* IE 9 */
   -webkit-transform: rotate(10deg); /* Safari */
   transform: rotate(10deg); /* Standard syntax */
@@ -96,6 +128,15 @@ body {
   padding-right:20px;
 }
 
+.infopanelMobile {
+  background: #32170b !important;
+  border-radius: 0px !important;
+  height: 75px !important;
+  padding-left: 20px;
+  padding-right:10px;
+  padding-top:10px;
+}
+
 .searchbar {
   border-top-right-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
@@ -123,4 +164,8 @@ body {
 
 .description {
   font-size: 20px;
+}
+
+.no-padding {
+  padding:0 !important;
 }
